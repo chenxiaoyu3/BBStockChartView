@@ -5,9 +5,11 @@ An iOS stock chart view, K-Line, volume graph.
 
 ![Screenshots](https://github.com/chenxiaoyu3/BBStockChartView/blob/master/BBStockChartViewDemo/Screenshots/1.png)
 
----------
+BStockchartView is used in project [BBAltcoin](http://bbaltcoin.com/) in [AppStore](https://itunes.apple.com/tt/app/bb-kan-pan/id962337229?mt=8) and Android. The iOS source is [here](https://github.com/chenxiaoyu3/BBAltcoin-iOS).
+----------------
 See the demo xcode project for details
-
+- - - 
+'''Objective-C
 	//init with any size, autolayout
 	_chartView = [[BBChartView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.height, self.view.frame.size.width)];
 	[self.view addSubview:_chartView];
@@ -43,6 +45,6 @@ See the demo xcode project for details
 
 	// begin to show the view animated
 	[self.chartView drawAnimated:YES];
-
+'''
 ----------
-BBStockchartView is used in project [BBAltcoin](http://bbaltcoin.com/) in [AppStore](https://itunes.apple.com/tt/app/bb-kan-pan/id962337229?mt=8) and Android. The iOS source is [here](https://github.com/chenxiaoyu3/BBAltcoin-iOS)
+B
