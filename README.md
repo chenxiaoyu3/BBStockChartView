@@ -44,4 +44,5 @@ See the demo xcode project for details
 	// begin to show the view animated
 	[self.chartView drawAnimated:YES];
 
-
+----------
+BBStockchartView is used in project [BBAltcoin](http://bbaltcoin.com/) in [AppStore](https://itunes.apple.com/tt/app/bb-kan-pan/id962337229?mt=8) and Android. The iOS source is [here](https://github.com/chenxiaoyu3/BBAltcoin-iOS)
