@@ -9,9 +9,9 @@
 #ifndef BBStockChartViewDemo_BBStockChart_h
 #define BBStockChartViewDemo_BBStockChart_h
 
-#import "Area.h"
-#import "AxisX.h"
-#import "AxisY.h"
+#import "Area/Area.h"
+#import "Axis/AxisX.h"
+#import "Axis/AxisY.h"
 #import "BaseLayer.h"
 #import "BBChartUtils.h"
 #import "BBTheme.h"

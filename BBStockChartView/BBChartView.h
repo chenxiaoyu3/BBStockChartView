@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Area.h"
+#import "Area/Area.h"
 @interface BBChartView : UIView
 
 @property (nonatomic, strong) NSMutableArray* areas;
