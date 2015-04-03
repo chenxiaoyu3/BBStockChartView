@@ -53,7 +53,8 @@
     CGFloat x = idx * self.pointWidth + self.pointWidth / 2;
     CGFloat y1 = height - [self.axisAttached heighForVal:point.high];
     CGFloat y2 = height - [self.axisAttached heighForVal:point.low];
-    CALayer* lh = [BaseLayer layerOfLineFrom:CGPointZero to:CGPointMake(0, y1-y2) withColor:color andWidth:1];
+
+    CALayer* lh = [BaseLayer layerOfLineFrom:CGPointZero to:CGPointMake(0, y1-y2+1) withColor:color andWidth:1];
     lh.position = CGPointMake(x, y2);
     
     if (point.open > point.close) {
@@ -68,7 +69,7 @@
     if (self.pointWidth <= ocWidth+2) {
         ocWidth = self.pointWidth - 2;
     }
-    CALayer* oc = [BaseLayer layerOfLineFrom:CGPointZero to:CGPointMake(0, y1-y2) withColor:color andWidth:ocWidth];
+    CALayer* oc = [BaseLayer layerOfLineFrom:CGPointZero to:CGPointMake(0, y1-y2+1) withColor:color andWidth:ocWidth];
     oc.position = CGPointMake(x, y2);
     
 //    NSLog(@"StockPoint val:%.1f, height:%.1f", point.open, y1);
