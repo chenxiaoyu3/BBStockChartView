@@ -47,13 +47,16 @@
     _bottomAxis.anchorPoint = CGPointZero;
     _bottomAxis.position = CGPointMake(_axisYwidth, height - _axisXheight);
     
+    NSUInteger maxIdxNum = 0;
     for (Series* s in _theSeries) {
         s.bounds = CGRectMake(0, 0, width - _axisYwidth, height -_axisXheight);
         s.position = CGPointMake( _axisYwidth, 0);
         [s prepareForDraw];
-            //所有series的data个数必须一样
-        _bottomAxis.idxNum = s.data.count;
+        if (s.data.count > maxIdxNum) {
+            maxIdxNum = s.data.count;
+        }
     }
+    _bottomAxis.idxNum = maxIdxNum;
     
 }
 

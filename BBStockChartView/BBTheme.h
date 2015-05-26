@@ -33,5 +33,7 @@
 @property (nonatomic) UIColor* borderColor;
 
 @property (nonatomic) UIColor* defTextColor;
+@property (nonatomic) UIColor* defLineColor;
+@property (nonatomic) float defLineWidth;
 +(BBTheme*) theme;
 @end

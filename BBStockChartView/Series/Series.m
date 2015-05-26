@@ -23,7 +23,9 @@
 
 
 - (void)drawAnimated:(BOOL)animated{
-    
+    for (int i = 0; i < self.data.count; ++i) {
+        [self drawPoint:i animated:animated];
+    }
 }
 
 -(float)pointWidth{
@@ -33,5 +35,9 @@
     }
     return w / _data.count;
 
+}
+
+- (void)addPoint:(float)p{
+    
 }
 @end

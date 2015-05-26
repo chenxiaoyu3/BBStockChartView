@@ -31,6 +31,8 @@ BBTheme* _defTheme = nil;
         _defTheme.axisColor = [UIColor whiteColor];
         _defTheme.borderColor = [UIColor grayColor];
         _defTheme.defTextColor = [UIColor whiteColor];
+        _defTheme.defLineColor = [UIColor whiteColor];
+        _defTheme.defLineWidth = 1;
     }
     return _defTheme;
 }

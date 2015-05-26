@@ -25,6 +25,7 @@
 		FF3100611AC3FF740085C822 /* Series.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3100561AC3FF740085C822 /* Series.m */; };
 		FF3100621AC3FF740085C822 /* StockSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = FF3100581AC3FF740085C822 /* StockSeries.m */; };
 		FF3100671AC4063A0085C822 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = FF3100661AC4063A0085C822 /* data.json */; };
+		FF6FB8761B14895E006F33BA /* LineSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = FF6FB8751B14895E006F33BA /* LineSeries.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,8 @@
 		FF3100581AC3FF740085C822 /* StockSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StockSeries.m; sourceTree = "<group>"; };
 		FF3100631AC3FFDE0085C822 /* BBStockChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BBStockChart.h; sourceTree = "<group>"; };
 		FF3100661AC4063A0085C822 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = SOURCE_ROOT; };
+		FF6FB8741B14895E006F33BA /* LineSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LineSeries.h; sourceTree = "<group>"; };
+		FF6FB8751B14895E006F33BA /* LineSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LineSeries.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +206,8 @@
 				FF3100561AC3FF740085C822 /* Series.m */,
 				FF3100571AC3FF740085C822 /* StockSeries.h */,
 				FF3100581AC3FF740085C822 /* StockSeries.m */,
+				FF6FB8741B14895E006F33BA /* LineSeries.h */,
+				FF6FB8751B14895E006F33BA /* LineSeries.m */,
 			);
 			path = Series;
 			sourceTree = "<group>";
@@ -316,6 +321,7 @@
 				FF31005A1AC3FF740085C822 /* AxisX.m in Sources */,
 				FF3100591AC3FF740085C822 /* Area.m in Sources */,
 				FF3100611AC3FF740085C822 /* Series.m in Sources */,
+				FF6FB8761B14895E006F33BA /* LineSeries.m in Sources */,
 				FF31001E1AC3FF570085C822 /* main.m in Sources */,
 				FF31005C1AC3FF740085C822 /* BaseLayer.m in Sources */,
 				FF31005E1AC3FF740085C822 /* BBChartView.m in Sources */,

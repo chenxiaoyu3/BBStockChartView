@@ -35,6 +35,12 @@
     return self.bounds.size.height;
 }
 
+- (void)setTouchBottom:(BOOL)touchBottom{
+    if (!_touchBottom) {
+        return;
+    }
+    _touchBottom = touchBottom;
+}
 - (CGFloat)heighForVal:(CGFloat)val{
     CGFloat low = self.minVal;
     CGFloat high = self.maxVal;

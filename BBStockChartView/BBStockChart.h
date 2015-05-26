@@ -17,6 +17,7 @@
 #import "BBTheme.h"
 #import "BarSeries.h"
 #import "StockSeries.h"
+#import "LineSeries.h"
 
 #import "BBChartView.h"
 
