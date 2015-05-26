@@ -23,7 +23,9 @@
 }
 
 - (void)drawPoint:(NSUInteger)idx animated:(BOOL)animated{
-    
+    if (idx >= self.data.count) {
+        return;
+    }
     CALayer* l = [[CALayer alloc] init];
     l.backgroundColor = [BBTheme theme].barFillColor.CGColor;
     l.borderColor = [BBTheme theme].barBorderColor.CGColor;

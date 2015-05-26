@@ -34,6 +34,9 @@
 }
 
 - (void)drawPoint:(NSUInteger)idx animated:(BOOL)animated{
+    if (idx >= self.data.count) {
+        return;
+    }
     StockSeriesPoint* point = (StockSeriesPoint*)(self.data[idx]);
     UIColor* color = nil;
     if (idx == 0) {
