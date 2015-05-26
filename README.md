@@ -3,7 +3,7 @@ StockChartView
 
 An iOS stock chart view, K-Line, volume graph.
 
-![Screenshots](https://github.com/chenxiaoyu3/BBStockChartView/blob/master/BBStockChartViewDemo/Screenshots/1.png)
+![Screenshots](https://github.com/chenxiaoyu3/BBStockChartView/blob/master/BBStockChartViewDemo/Screenshots/v1.1.0.png)
 
 BBStockchartView is used in project [BBAltcoin](http://bbaltcoin.com/) in [AppStore](https://itunes.apple.com/tt/app/bb-kan-pan/id962337229?mt=8) and Android. The iOS source is [here](https://github.com/chenxiaoyu3/BBAltcoin-iOS).
 
