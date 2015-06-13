@@ -48,7 +48,9 @@
     if (!self.touchBottom) {
         low -= (high - low) * 0.2;
     }
-    
+    if (high - low <= 0.001) {
+        return 0;
+    }
     return (val - low) * self.designHight /  (high-low) ;
 }
 
