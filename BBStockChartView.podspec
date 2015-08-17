@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "BBStockChartView"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "An iOS stock chart library in Objective-C, K-Line."
 
   s.description  = <<-DESC
@@ -72,7 +72,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/chenxiaoyu3/BBStockChartView.git", :tag => "1.1.1" }
+  s.source       = { :git => "https://github.com/chenxiaoyu3/BBStockChartView.git", :tag => "1.1.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
