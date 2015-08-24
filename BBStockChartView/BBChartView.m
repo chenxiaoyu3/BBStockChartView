@@ -23,7 +23,7 @@
     UIView* _chartView;
     UIView* _toastView;
     UILabel* _toastLabel;
-
+    
 }
 
 - (void) redraw;
@@ -77,7 +77,7 @@
 }
 
 - (void)_initToastView{
-    _toastView = [[UIView alloc] initWithFrame:CGRectMake(self.frame.size.width / 2 - 50, 0, 100, 61.8)];
+    _toastView = [[UIView alloc] init];
     _toastLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 100, 61.8)];
     UILabel* label = _toastLabel;
     label.textAlignment = NSTextAlignmentCenter;
@@ -116,12 +116,14 @@
         [_areaHeights addObject:[NSNumber numberWithFloat:1.0f/_areas.count*self.bounds.size.height]];
     }
     
-
+    
 }
 
 - (void)prepareForDraw{
+    _toastView.frame = CGRectMake(self.frame.size.width / 2 - 50, 0, 100, 61.8);
+    _chartView.frame = CGRectMake(0, 0, self.frame.size.width * _currentScale, self.frame.size.height);
     CGFloat width = _chartView.layer.bounds.size.width;
-//    CGFloat height = self.layer.bounds.size.height;
+    //    CGFloat height = self.layer.bounds.size.height;
     
     CGFloat curY = 0;
     for (int i = 0; i < _areas.count; ++i) {
@@ -141,8 +143,8 @@
     for (Area* a in _areas) {
         [a drawAnimated:animated];
     }
-//    self.layer.borderWidth = 1;
-//    self.layer.borderColor = [BBTheme defTheme].borderColor.CGColor;
+    //    self.layer.borderWidth = 1;
+    //    self.layer.borderColor = [BBTheme defTheme].borderColor.CGColor;
 }
 - (void)redraw{
     self.backgroundColor = [BBTheme theme].backgroundColor;
@@ -185,7 +187,7 @@
 }
 // TODO: the axisX should be fixed when dragging the view
 - (void) handlePanGesture:(UIPanGestureRecognizer* )recognizer{
-    CGPoint trans = [recognizer translationInView:self];
+    CGPoint trans = [recognizer translationInView:_chartView];
     CGFloat newX = _currentX + trans.x;
     if (newX > 0) {
         newX = 0;
@@ -193,13 +195,16 @@
     if (newX + _chartView.frame.size.width < self.frame.size.width) {
         newX = self.frame.size.width - _chartView.frame.size.width;
     }
+    //    NSLog(@"newX %f", trans.x);
     if (recognizer.state == UIGestureRecognizerStateEnded) {
         _currentX = newX;
     }
     // make the drag smoother
     [UIView animateWithDuration:0.15 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         _chartView.frame = CGRectMake(newX, 0, _chartView.frame.size.width, _chartView.frame.size.height);
-    } completion: nil];
+    } completion: ^(BOOL finished){
+        
+    }];
 }
 - (void) handlePinchGesture:(UIPinchGestureRecognizer* )recognizer{
     if (recognizer.state == UIGestureRecognizerStateBegan) {
@@ -218,7 +223,7 @@
         // TODO: redraw all the sublayers make the real-time scale stuck, needs to be fixed.
         [self scaleWith:scale];
     }
-
+    
     if (recognizer.state == UIGestureRecognizerStateEnded) {
         [_toastView removeFromSuperview];
         _currentScale = scale;
