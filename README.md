@@ -1,7 +1,7 @@
 StockChartView
 ===============
 
-An iOS stock chart view, K-Line, volume graph, simple gesture supported.
+A full customizable iOS stock chart view, K-Line, volume graph, with gesture supported.
 
 ![Screenshots](https://github.com/chenxiaoyu3/BBStockChartView/blob/master/BBStockChartViewDemo/Screenshots/v1.1.0.png)
 
