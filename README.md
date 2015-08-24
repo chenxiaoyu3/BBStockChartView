@@ -1,11 +1,11 @@
 StockChartView
 ===============
 
-An iOS stock chart view, K-Line, volume graph.
+An iOS stock chart view, K-Line, volume graph, simple gesture supported.
 
 ![Screenshots](https://github.com/chenxiaoyu3/BBStockChartView/blob/master/BBStockChartViewDemo/Screenshots/v1.1.0.png)
 
-BBStockchartView is used in project [BBAltcoin](http://bbaltcoin.com/) in [AppStore](https://itunes.apple.com/tt/app/bb-kan-pan/id962337229?mt=8) and Android. The iOS source is [here](https://github.com/chenxiaoyu3/BBAltcoin-iOS).
+BBStockchartView is used in project [BBAltcoin](http://bbaltcoin.com/) in [AppStore](https://itunes.apple.com/tt/app/bb-kan-pan/id962337229?mt=8) and [Android](http://bbaltcoin.com/). The iOS source is [here](https://github.com/chenxiaoyu3/BBAltcoin-iOS).
 
 Installation
 ----------------
