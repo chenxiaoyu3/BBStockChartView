@@ -70,6 +70,13 @@
     [_leftAxis drawAnimated:animated];
     [_bottomAxis drawAnimated:animated];
     //    [_rightAxis drawAnimated:YES];
-
 }
+- (void)redrawAnimated:(BOOL)animated{
+    for (Series* s in _theSeries) {
+        [s redrawAnimated:animated];
+    }
+    [_leftAxis redrawAnimated:animated];
+    [_bottomAxis redrawAnimated:animated];
+}
+
 @end

@@ -27,6 +27,10 @@
         [self drawPoint:i animated:animated];
     }
 }
+- (void)redrawAnimated:(BOOL)animated{
+    self.sublayers = nil;
+    [self drawAnimated:animated];
+}
 
 -(float)pointWidth{
     CGFloat w = self.bounds.size.width;

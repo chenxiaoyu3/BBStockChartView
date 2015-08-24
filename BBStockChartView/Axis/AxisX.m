@@ -30,8 +30,6 @@
     }
 
     for(int i = 0; i < self.idxNum; i += 1){
-        
-        
         NSString* text = nil;
         if (self.labelProvider) {
             text = [self.labelProvider textForIdx:i];
@@ -60,12 +58,11 @@
             dash.position = CGPointMake(idxWidth*i, 1);
             [self addSublayer:dash];
         }
-        
-        
-
     }
-    
-    
-    
+}
+
+- (void)redrawAnimated:(BOOL)animated{
+    self.sublayers = nil;
+    [self drawAnimated:animated];
 }
 @end

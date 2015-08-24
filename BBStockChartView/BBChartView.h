@@ -8,14 +8,21 @@
 
 #import <UIKit/UIKit.h>
 #import "Area/Area.h"
-@interface BBChartView : UIView
+@interface BBChartView : UIView{
+    
+}
 
-@property (nonatomic, strong) NSMutableArray* areas;
-@property (nonatomic, strong) NSMutableArray* areaHeights;
+@property (nonatomic) CGFloat scaleFloor;
+
+//when pinch the view, scale it in-time, not after. Default is NO.
+@property (nonatomic) BOOL realTimeScale;
 
 -(void)setHeighRatio:(CGFloat)heightRatio forArea:(Area*)area;
 -(void)addArea:(Area *)area;
 
 -(void)drawAnimated:(BOOL)animated;
 -(void)reset;
+
+
+
 @end

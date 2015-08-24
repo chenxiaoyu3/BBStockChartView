@@ -15,6 +15,7 @@
 
 - (void)prepareForDraw;
 - (void)drawAnimated:(BOOL)animated;
+- (void)redrawAnimated:(BOOL)animated;
 
 + (CALayer*) layerOfLineFrom:(CGPoint)from to:(CGPoint)to withColor:(UIColor*)color andWidth:(CGFloat)width;
 

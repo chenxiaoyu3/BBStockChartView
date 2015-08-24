@@ -42,6 +42,5 @@
     for (NSNumber* n in self.data) {
         [self.axisAttached addContainingVal:n.floatValue];
     }
-    
 }
 @end

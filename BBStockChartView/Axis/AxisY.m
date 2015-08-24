@@ -114,8 +114,11 @@
         [self addSublayer:t];
         [self addSublayer:dash];
     }
-//    CATextLayer
     
 }
 
+- (void)redrawAnimated:(BOOL)animated{
+    self.sublayers = nil;
+    [self drawAnimated:animated];
+}
 @end

@@ -24,6 +24,7 @@
 - (void)drawPoint:(NSUInteger)idx animated:(BOOL)animated;
 
 - (void)drawAnimated:(BOOL)animated;
+- (void)redrawAnimated:(BOOL)animated;
 
 - (void)addPoint:(float)p;
 @end

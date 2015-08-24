@@ -25,6 +25,6 @@
 -(void) addSeries:(Series*)series;
 
 -(void) drawAnimated:(BOOL)animated;
-
+-(void) redrawAnimated:(BOOL)animated;
 
 @end

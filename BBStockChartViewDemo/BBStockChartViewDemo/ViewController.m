@@ -38,6 +38,7 @@
     StockSeries* stock = [[StockSeries alloc] init];
     LineSeries* line = [[LineSeries alloc] init];
     line.color = [UIColor yellowColor];
+    line.width = 1.5;
     
     LineSeries* line2 = [[LineSeries alloc] init];
     line2.color = [UIColor grayColor];

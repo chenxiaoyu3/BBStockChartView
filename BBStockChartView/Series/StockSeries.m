@@ -93,10 +93,4 @@
     
 }
 
-//- (void)drawAnimated:(BOOL)animated{
-//    
-//    for (int i = 0; i < self.data.count; ++i) {
-//        [self drawPoint:i animated:animated];
-//    }
-//}
 @end
