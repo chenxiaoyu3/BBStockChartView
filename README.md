@@ -21,7 +21,7 @@ Done!
 Usage
 ----------------
 
-See the demo XCode project for details
+See the demo Xcode project for details
 
 
 ```Objective-C
