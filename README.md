@@ -12,7 +12,7 @@ Installation
 Using CocoaPods
 
 ```Pod
-Pod "BBStockChartView"
+pod 'BBStockChartView', '~> 1.3'
 ```
 
 Or add all files in folder "BBStockChartView" to your project.
@@ -50,5 +50,18 @@ StockSeries* stock = [[StockSeries alloc] init];
 // begin to show the view animated
 [self.chartView drawAnimated:YES];
 ```
-----------
 
+
+
+Contributing
+-------
+We'll love contributions, please report bugs in the issue tracker, create pull request (on branch develop) and suggest new great features (also in the issue tracker).
+
+
+License
+-----------
+BBStockChartView available under the MIT license, so feel free to use it in commercial and non-commercial projects.
+
+Author
+-------
+Chen XiaoYu

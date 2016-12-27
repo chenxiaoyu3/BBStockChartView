@@ -52,8 +52,8 @@
 		FF3100311AC3FF570085C822 /* BBStockChartViewDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BBStockChartViewDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF3100361AC3FF570085C822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF3100371AC3FF570085C822 /* BBStockChartViewDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BBStockChartViewDemoTests.m; sourceTree = "<group>"; };
-		FF3100431AC3FF740085C822 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Area.h; sourceTree = "<group>"; };
-		FF3100441AC3FF740085C822 /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Area.m; sourceTree = "<group>"; };
+		FF3100431AC3FF740085C822 /* Area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Area.h; path = Area/Area.h; sourceTree = "<group>"; };
+		FF3100441AC3FF740085C822 /* Area.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Area.m; path = Area/Area.m; sourceTree = "<group>"; };
 		FF3100461AC3FF740085C822 /* AxisX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxisX.h; sourceTree = "<group>"; };
 		FF3100471AC3FF740085C822 /* AxisX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AxisX.m; sourceTree = "<group>"; };
 		FF3100481AC3FF740085C822 /* AxisY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AxisY.h; sourceTree = "<group>"; };
@@ -160,6 +160,8 @@
 		FF3100411AC3FF740085C822 /* BBStockChartView */ = {
 			isa = PBXGroup;
 			children = (
+				FF3100431AC3FF740085C822 /* Area.h */,
+				FF3100441AC3FF740085C822 /* Area.m */,
 				FF3100421AC3FF740085C822 /* Area */,
 				FF3100451AC3FF740085C822 /* Axis */,
 				FF31004A1AC3FF740085C822 /* BaseLayer.h */,
@@ -180,8 +182,6 @@
 		FF3100421AC3FF740085C822 /* Area */ = {
 			isa = PBXGroup;
 			children = (
-				FF3100431AC3FF740085C822 /* Area.h */,
-				FF3100441AC3FF740085C822 /* Area.m */,
 			);
 			path = Area;
 			sourceTree = "<group>";
@@ -262,6 +262,7 @@
 				TargetAttributes = {
 					FF3100171AC3FF560085C822 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = JT5K9NWG8Q;
 						ProvisioningStyle = Automatic;
 					};
 					FF3100301AC3FF570085C822 = {
@@ -373,7 +374,7 @@
 		FF3100391AC3FF570085C822 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -420,7 +421,7 @@
 		FF31003A1AC3FF570085C822 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -464,7 +465,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=*]" = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JT5K9NWG8Q;
 				INFOPLIST_FILE = BBStockChartViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenxiaoyu.BBStockChartViewDemo;
@@ -479,7 +480,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JT5K9NWG8Q;
 				INFOPLIST_FILE = BBStockChartViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.chenxiaoyu.BBStockChartViewDemo;

@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Area/Area.h"
+#import "Area.h"
 @interface BBChartView : UIView{
     
 }
